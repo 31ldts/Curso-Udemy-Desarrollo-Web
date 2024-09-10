@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!-- Normalize para conseguir una apariencia similar en todos los buscadores -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Nueva fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 
+    Enfocado a la metodología BEM (Bloque, Elemento, Modificador) 
+    Sintaxis: bloque__elemento--modificador
+-->
+<body>
+    <header class="header">
+        <!-- Logo del sitio web el cual llevará a la página principal si es clicado -->
+        <a href="index.html">
+            <!-- El texto alternativo se mostrará en el caso de que la imagen no cargue -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Sobre Nosotros</h1>
+        <div class="nosotros">
+            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="chica camisa">
+            <div class="nosotros__texto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod nisl vitae dui pharetra, non vehicula erat euismod. In mattis fringilla tellus, et placerat nibh bibendum vitae. Duis in aliquam nisi. Duis iaculis maximus consectetur. Vestibulum sit amet turpis at augue pulvinar fermentum. Integer id dui sodales, malesuada nisl ullamcorper, aliquam ex.
+                </p>
+                <p>
+                    Phasellus auctor vestibulum diam. Praesent sodales lorem nec vehicula suscipit. Praesent sit amet ex a est porttitor condimentum. Nullam sit amet ante accumsan, aliquet libero consequat, eleifend risus.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar_titulo">¿Por qué comprar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">El mejor precio</h3>
+                <p>Phasellus auctor vestibulum diam. Praesent sodales lorem nec vehicula suscipit.</p>
+            </div><!-- .bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_2.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Para devs</h3>
+                <p>Phasellus auctor vestibulum diam. Praesent sodales lorem nec vehicula suscipit.</p>
+            </div><!-- .bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_3.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Envío gratis</h3>
+                <p>Phasellus auctor vestibulum diam. Praesent sodales lorem nec vehicula suscipit.</p>
+            </div><!-- .bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_4.png" alt="porque comprar">
+                <h3 class="bloque__titulo">La mejor calidad</h3>
+                <p>Phasellus auctor vestibulum diam. Praesent sodales lorem nec vehicula suscipit.</p>
+            </div><!-- .bloque -->
+        </div><!-- .bloques -->
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2024.</p>
+    </footer>
+</body>
+</html>
