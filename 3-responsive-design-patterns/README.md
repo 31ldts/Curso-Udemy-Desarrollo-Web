@@ -1,4 +1,4 @@
-Responsive Design Patterns
+# Responsive Design Patterns
 
 Este directorio agrupa un conjunto de mini-proyectos que muestran diversos patrones de diseño responsivo.
 
